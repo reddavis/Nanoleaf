@@ -1,0 +1,1511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A427E4A92819B641006EEADC /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427E4A82819B641006EEADC /* Assertions.swift */; };
+		A427E4AC2819B9D2006EEADC /* MockHTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD43F273ECA3100104C4E /* MockHTTPSession.swift */; };
+		A427E4AD2819B9D2006EEADC /* MockHTTPSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD43E273ECA3100104C4E /* MockHTTPSessionDataTask.swift */; };
+		A427E4B02819BA11006EEADC /* NanoleafClient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427E4AF2819BA11006EEADC /* NanoleafClient+Extension.swift */; };
+		A427E4B22819C52E006EEADC /* AnimationDataFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427E4B12819C52E006EEADC /* AnimationDataFrameTests.swift */; };
+		A427E4B42819C97D006EEADC /* PanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427E4B32819C97D006EEADC /* PanelTests.swift */; };
+		A427E4B62819CB73006EEADC /* AnimationDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427E4B52819CB73006EEADC /* AnimationDataTests.swift */; };
+		A4652C9F28088721008E9DE7 /* Asynchrone in Frameworks */ = {isa = PBXBuildFile; productRef = A4652C9E28088721008E9DE7 /* Asynchrone */; };
+		A48DD425273EC99E00104C4E /* Nanoleaf.h in Headers */ = {isa = PBXBuildFile; fileRef = A48DD417273EC99E00104C4E /* Nanoleaf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A48DD442273ECA3100104C4E /* URLSessionDataTask+HTTPSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD433273ECA3100104C4E /* URLSessionDataTask+HTTPSessionDataTask.swift */; };
+		A48DD443273ECA3100104C4E /* URLSession+HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD434273ECA3100104C4E /* URLSession+HTTPSession.swift */; };
+		A48DD444273ECA3100104C4E /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD435273ECA3100104C4E /* HTTPURLResponse+Extension.swift */; };
+		A48DD446273ECA3100104C4E /* HTTPSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD438273ECA3100104C4E /* HTTPSessionDataTask.swift */; };
+		A48DD448273ECA3100104C4E /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD43A273ECA3100104C4E /* HTTPRequest.swift */; };
+		A48DD449273ECA3100104C4E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD43B273ECA3100104C4E /* HTTPMethod.swift */; };
+		A48DD44A273ECA3100104C4E /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD43C273ECA3100104C4E /* HTTPSession.swift */; };
+		A48DD489273ECE0200104C4E /* HTTPRequest+Nanoleaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD451273ECE0200104C4E /* HTTPRequest+Nanoleaf.swift */; };
+		A48DD48C273ECE0200104C4E /* JSONDecoder+Nanoleaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD454273ECE0200104C4E /* JSONDecoder+Nanoleaf.swift */; };
+		A48DD493273ECE0200104C4E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD45E273ECE0200104C4E /* APIError.swift */; };
+		A48DD499273ECE0300104C4E /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD464273ECE0200104C4E /* Fixture.swift */; };
+		A48DD4A1273ECE0300104C4E /* NanoleafClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD46E273ECE0200104C4E /* NanoleafClient.swift */; };
+		A48DD4A2273ECE0300104C4E /* UnknownCaseRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD470273ECE0200104C4E /* UnknownCaseRepresentable.swift */; };
+		A48DD4AB273ECE0300104C4E /* AuthenticateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD47E273ECE0200104C4E /* AuthenticateRequest.swift */; };
+		A48DD4B3273EE26600104C4E /* NanoleafAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */; };
+		A48DD4B4273EE2CE00104C4E /* TestTargetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD473273ECE0200104C4E /* TestTargetClass.swift */; };
+		A48DD4B5273EE4E600104C4E /* AuthenticateRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD47D273ECE0200104C4E /* AuthenticateRequest+Mock.swift */; };
+		A48DD4B6273EE4F700104C4E /* AuthenticateRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A48DD47C273ECE0200104C4E /* AuthenticateRequest.json */; };
+		A48DD4B7273EE4FC00104C4E /* AuthenticateRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD47F273ECE0200104C4E /* AuthenticateRequestTests.swift */; };
+		A48DD4BB273EE56C00104C4E /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD474273ECE0200104C4E /* MockRequest.swift */; };
+		A48DD4BD2740092600104C4E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4BC2740092600104C4E /* Logger.swift */; };
+		A48DD4BF27400B3600104C4E /* DeviceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4BE27400B3600104C4E /* DeviceIdentifier.swift */; };
+		A48DD4C227400CD500104C4E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4C027400CD500104C4E /* Encodable+Extension.swift */; };
+		A48DD4C52740150500104C4E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4C42740150500104C4E /* Auth.swift */; };
+		A48DD4E22740213200104C4E /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD476273ECE0200104C4E /* MockResponse.swift */; };
+		A48DD4E62740249800104C4E /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4E52740249800104C4E /* Device.swift */; };
+		A48DD4E927425B3400104C4E /* ColorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4E827425B3400104C4E /* ColorMode.swift */; };
+		A48DD4EB27425B6000104C4E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4EA27425B6000104C4E /* State.swift */; };
+		A48DD4ED2742646A00104C4E /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4EC2742646A00104C4E /* Value.swift */; };
+		A48DD4EF274264AB00104C4E /* RangedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4EE274264AB00104C4E /* RangedValue.swift */; };
+		A48DD4F127427C7000104C4E /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F027427C7000104C4E /* Layout.swift */; };
+		A48DD4F327427CBD00104C4E /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F227427CBD00104C4E /* ShapeType.swift */; };
+		A48DD4F52742823C00104C4E /* EffectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F42742823C00104C4E /* EffectList.swift */; };
+		A48DD4F82742A84700104C4E /* Ryhthm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F72742A84700104C4E /* Ryhthm.swift */; };
+		A48DD4FA2742A87B00104C4E /* RyhthmPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */; };
+		A48DD4FC2742A8A200104C4E /* RyhthmMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */; };
+		A48DD4FF2742C3BF00104C4E /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4FE2742C3BF00104C4E /* Details.swift */; };
+		A48DD5012742C3E600104C4E /* PanelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD5002742C3E600104C4E /* PanelPosition.swift */; };
+		A48DD5062742CC1100104C4E /* FetchDeviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD5052742CC1100104C4E /* FetchDeviceRequest.swift */; };
+		A48DD5092742CFE400104C4E /* FetchDeviceRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD5082742CFE400104C4E /* FetchDeviceRequestTests.swift */; };
+		A48DD50C2742CFF900104C4E /* FetchDeviceRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD50B2742CFF900104C4E /* FetchDeviceRequest+Mock.swift */; };
+		A48DD50E2742D0AE00104C4E /* FetchDeviceRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A48DD50D2742D0AE00104C4E /* FetchDeviceRequest.json */; };
+		A4ABB17227492D3000D3662B /* Nanoleaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48DD414273EC99E00104C4E /* Nanoleaf.framework */; };
+		A4DDF862274933300042274B /* FetchOnOffStateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF861274933300042274B /* FetchOnOffStateRequest.swift */; };
+		A4DDF866274934570042274B /* FetchOnOffStateRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF865274934570042274B /* FetchOnOffStateRequestTests.swift */; };
+		A4DDF869274935360042274B /* FetchOnOffStateRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF868274935360042274B /* FetchOnOffStateRequest+Mock.swift */; };
+		A4DDF86B274935E20042274B /* FetchOnOffStateRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF86A274935E20042274B /* FetchOnOffStateRequest.json */; };
+		A4DDF86D274939670042274B /* FetchBrightnessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF86C274939670042274B /* FetchBrightnessRequest.swift */; };
+		A4DDF87027493A660042274B /* FetchBrightnessRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF86F27493A660042274B /* FetchBrightnessRequest+Mock.swift */; };
+		A4DDF87227493A8C0042274B /* FetchBrightnessRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF87127493A8C0042274B /* FetchBrightnessRequest.json */; };
+		A4DDF87527493ABF0042274B /* FetchBrightnessRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF87427493ABF0042274B /* FetchBrightnessRequestTests.swift */; };
+		A4DDF87727493C260042274B /* FetchHueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF87627493C260042274B /* FetchHueRequest.swift */; };
+		A4DDF87B27493CA00042274B /* FetchHueRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF87A27493CA00042274B /* FetchHueRequest+Mock.swift */; };
+		A4DDF87D27493CAA0042274B /* FetchHueRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF87C27493CAA0042274B /* FetchHueRequest.json */; };
+		A4DDF87F27493CDF0042274B /* FetchHueRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF87E27493CDF0042274B /* FetchHueRequestTests.swift */; };
+		A4DDF88127493DE00042274B /* FetchSaturationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF88027493DE00042274B /* FetchSaturationRequest.swift */; };
+		A4DDF88427493E170042274B /* FetchSaturationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF88327493E170042274B /* FetchSaturationRequestTests.swift */; };
+		A4DDF88727493E2E0042274B /* FetchSaturationRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF88627493E2D0042274B /* FetchSaturationRequest+Mock.swift */; };
+		A4DDF88927493E380042274B /* FetchSaturationRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF88827493E380042274B /* FetchSaturationRequest.json */; };
+		A4DDF88B27493F310042274B /* FetchColorTemperatureRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF88A27493F310042274B /* FetchColorTemperatureRequest.swift */; };
+		A4DDF88E27493F660042274B /* FetchColorTemperatureRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF88D27493F660042274B /* FetchColorTemperatureRequest+Mock.swift */; };
+		A4DDF89127493F770042274B /* FetchColorTemperatureRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF89027493F770042274B /* FetchColorTemperatureRequest.json */; };
+		A4DDF89327493FFF0042274B /* FetchColorTemperatureRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF89227493FFF0042274B /* FetchColorTemperatureRequestTests.swift */; };
+		A4DDF8952749407E0042274B /* FetchColorModeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF8942749407E0042274B /* FetchColorModeRequest.swift */; };
+		A4DDF898274942150042274B /* FetchColorModeRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF897274942150042274B /* FetchColorModeRequest+Mock.swift */; };
+		A4DDF89A2749421F0042274B /* FetchColorModeRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4DDF8992749421F0042274B /* FetchColorModeRequest.json */; };
+		A4DDF89D274943600042274B /* FetchColorModeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF89C274943600042274B /* FetchColorModeRequestTests.swift */; };
+		A4DDF8A027494C790042274B /* FetchSelectedEffectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDF89F27494C790042274B /* FetchSelectedEffectRequest.swift */; };
+		A4EE8C0F274B9F9200BE7F55 /* FetchSelectedEffectRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C0E274B9F9200BE7F55 /* FetchSelectedEffectRequest+Mock.swift */; };
+		A4EE8C11274B9F9E00BE7F55 /* FetchSelectedEffectRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C10274B9F9E00BE7F55 /* FetchSelectedEffectRequest.json */; };
+		A4EE8C14274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C13274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift */; };
+		A4EE8C16274BA10700BE7F55 /* UpdateSelectedEffectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C15274BA10700BE7F55 /* UpdateSelectedEffectRequest.swift */; };
+		A4EE8C19274BA47500BE7F55 /* UpdateSelectedEffectRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C18274BA47500BE7F55 /* UpdateSelectedEffectRequestTests.swift */; };
+		A4EE8C20274BA76600BE7F55 /* FetchEffectsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C1F274BA76600BE7F55 /* FetchEffectsRequest.swift */; };
+		A4EE8C23274BA7E700BE7F55 /* FetchEffectsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C22274BA7E700BE7F55 /* FetchEffectsRequestTests.swift */; };
+		A4EE8C25274BA7F800BE7F55 /* FetchEffectsRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C24274BA7F800BE7F55 /* FetchEffectsRequest+Mock.swift */; };
+		A4EE8C27274BA80500BE7F55 /* FetchEffectsRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C26274BA80500BE7F55 /* FetchEffectsRequest.json */; };
+		A4EE8C2B274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C2A274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift */; };
+		A4EE8C2F274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C2E274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift */; };
+		A4EE8C32274BACA200BE7F55 /* FetchGlobalOrientationRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C31274BACA200BE7F55 /* FetchGlobalOrientationRequest+Mock.swift */; };
+		A4EE8C34274BACAB00BE7F55 /* FetchGlobalOrientationRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C33274BACAB00BE7F55 /* FetchGlobalOrientationRequest.json */; };
+		A4EE8C36274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C35274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift */; };
+		A4EE8C39274BAF3900BE7F55 /* UpdatePanelLayoutRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C38274BAF3900BE7F55 /* UpdatePanelLayoutRequestTests.swift */; };
+		A4EE8C3B274BB01F00BE7F55 /* FetchPanelLayoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C3A274BB01F00BE7F55 /* FetchPanelLayoutRequest.swift */; };
+		A4EE8C3E274BB16900BE7F55 /* FetchPanelLayoutRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C3D274BB16900BE7F55 /* FetchPanelLayoutRequest+Mock.swift */; };
+		A4EE8C40274BB17300BE7F55 /* FetchPanelLayoutRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C3F274BB17300BE7F55 /* FetchPanelLayoutRequest.json */; };
+		A4EE8C42274BB17D00BE7F55 /* FetchPanelLayoutRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C41274BB17D00BE7F55 /* FetchPanelLayoutRequestTests.swift */; };
+		A4EE8C45274BB59000BE7F55 /* IdentifyPanelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C44274BB59000BE7F55 /* IdentifyPanelsRequest.swift */; };
+		A4EE8C47274BB73400BE7F55 /* IdentifyPanelsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C46274BB73400BE7F55 /* IdentifyPanelsRequestTests.swift */; };
+		A4EE8C49274BDE6600BE7F55 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C48274BDE6600BE7F55 /* Command.swift */; };
+		A4EE8C4B274BF6A000BE7F55 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C4A274BF6A000BE7F55 /* Plugin.swift */; };
+		A4EE8C4E274C040700BE7F55 /* PluginConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C4D274C040700BE7F55 /* PluginConfiguration.swift */; };
+		A4EE8C50274C0D7400BE7F55 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C4F274C0D7400BE7F55 /* PluginType.swift */; };
+		A4EE8C54274D412100BE7F55 /* ExecuteCommandRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C53274D412100BE7F55 /* ExecuteCommandRequest.swift */; };
+		A4EE8C57274D4E3A00BE7F55 /* CommandRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C56274D4E3A00BE7F55 /* CommandRequest.swift */; };
+		A4EE8C5B274D537700BE7F55 /* ExecuteCommandRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C5A274D537700BE7F55 /* ExecuteCommandRequestTests.swift */; };
+		A4EE8C5E274D5C1800BE7F55 /* CommandRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C5D274D5C1800BE7F55 /* CommandRequest+Mock.swift */; };
+		A4EE8C60274D5D7200BE7F55 /* FetchPlugins.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C5F274D5D7200BE7F55 /* FetchPlugins.json */; };
+		A4EE8C63274E3F8600BE7F55 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C62274E3F8600BE7F55 /* Effect.swift */; };
+		A4EE8C65274EB34C00BE7F55 /* PaletteColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C64274EB34C00BE7F55 /* PaletteColor.swift */; };
+		A4EE8C67274FF2F500BE7F55 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C66274FF2F500BE7F55 /* ColorType.swift */; };
+		A4EE8C69274FF30B00BE7F55 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C68274FF30B00BE7F55 /* AnimationType.swift */; };
+		A4EE8C6B275013F700BE7F55 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C6A275013F700BE7F55 /* Color.swift */; };
+		A4EE8C72275260E100BE7F55 /* Sequence+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C71275260E100BE7F55 /* Sequence+Extension.swift */; };
+		A4EE8C742752610700BE7F55 /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C732752610700BE7F55 /* SequenceTests.swift */; };
+		A4EE8C772752623600BE7F55 /* AnimationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C762752623600BE7F55 /* AnimationData.swift */; };
+		A4EE8C792752633800BE7F55 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C782752633800BE7F55 /* Panel.swift */; };
+		A4EE8C7B2752638F00BE7F55 /* AnimationDataFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C7A2752638F00BE7F55 /* AnimationDataFrame.swift */; };
+		A4EE8C7D27526CE600BE7F55 /* ValueRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C7C27526CE600BE7F55 /* ValueRange.swift */; };
+		A4EE8C7F2752704600BE7F55 /* FetchEffects.json in Resources */ = {isa = PBXBuildFile; fileRef = A4EE8C7E2752704600BE7F55 /* FetchEffects.json */; };
+		A4EE8C812754CF7200BE7F55 /* NanoleafDeviceBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8C802754CF7200BE7F55 /* NanoleafDeviceBrowser.swift */; };
+		A4EE8CB32755247E00BE7F55 /* DeviceAddressResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8CB22755247E00BE7F55 /* DeviceAddressResolver.swift */; };
+		A4EE8CB52755445600BE7F55 /* DeviceAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EE8CB42755445600BE7F55 /* DeviceAddress.swift */; };
+		A4FDBE5327480FA200012206 /* UpdateStateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FDBE5227480FA200012206 /* UpdateStateRequest.swift */; };
+		A4FDBE5A2748250000012206 /* UpdateStateRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FDBE592748250000012206 /* UpdateStateRequestTests.swift */; };
+		A4FDBE5D2748256500012206 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FDBE5C2748256500012206 /* Mockable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A48DD420273EC99E00104C4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A48DD40B273EC99E00104C4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A48DD413273EC99E00104C4E;
+			remoteInfo = Nanoleaf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A427E4A82819B641006EEADC /* Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
+		A427E4AF2819BA11006EEADC /* NanoleafClient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NanoleafClient+Extension.swift"; sourceTree = "<group>"; };
+		A427E4B12819C52E006EEADC /* AnimationDataFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDataFrameTests.swift; sourceTree = "<group>"; };
+		A427E4B32819C97D006EEADC /* PanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTests.swift; sourceTree = "<group>"; };
+		A427E4B52819CB73006EEADC /* AnimationDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDataTests.swift; sourceTree = "<group>"; };
+		A43AD625281EE4250044599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A48DD414273EC99E00104C4E /* Nanoleaf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nanoleaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48DD417273EC99E00104C4E /* Nanoleaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nanoleaf.h; sourceTree = "<group>"; };
+		A48DD41E273EC99E00104C4E /* NanoleafTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoleafTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48DD433273ECA3100104C4E /* URLSessionDataTask+HTTPSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+HTTPSessionDataTask.swift"; sourceTree = "<group>"; };
+		A48DD434273ECA3100104C4E /* URLSession+HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+HTTPSession.swift"; sourceTree = "<group>"; };
+		A48DD435273ECA3100104C4E /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
+		A48DD438273ECA3100104C4E /* HTTPSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSessionDataTask.swift; sourceTree = "<group>"; };
+		A48DD43A273ECA3100104C4E /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		A48DD43B273ECA3100104C4E /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A48DD43C273ECA3100104C4E /* HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
+		A48DD43E273ECA3100104C4E /* MockHTTPSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPSessionDataTask.swift; sourceTree = "<group>"; };
+		A48DD43F273ECA3100104C4E /* MockHTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPSession.swift; sourceTree = "<group>"; };
+		A48DD451273ECE0200104C4E /* HTTPRequest+Nanoleaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Nanoleaf.swift"; sourceTree = "<group>"; };
+		A48DD454273ECE0200104C4E /* JSONDecoder+Nanoleaf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Nanoleaf.swift"; sourceTree = "<group>"; };
+		A48DD45E273ECE0200104C4E /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A48DD464273ECE0200104C4E /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		A48DD46E273ECE0200104C4E /* NanoleafClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoleafClient.swift; sourceTree = "<group>"; };
+		A48DD470273ECE0200104C4E /* UnknownCaseRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownCaseRepresentable.swift; sourceTree = "<group>"; };
+		A48DD473273ECE0200104C4E /* TestTargetClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTargetClass.swift; sourceTree = "<group>"; };
+		A48DD474273ECE0200104C4E /* MockRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		A48DD476273ECE0200104C4E /* MockResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoleafAPIClientTests.swift; sourceTree = "<group>"; };
+		A48DD47C273ECE0200104C4E /* AuthenticateRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AuthenticateRequest.json; sourceTree = "<group>"; };
+		A48DD47D273ECE0200104C4E /* AuthenticateRequest+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AuthenticateRequest+Mock.swift"; sourceTree = "<group>"; };
+		A48DD47E273ECE0200104C4E /* AuthenticateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateRequest.swift; sourceTree = "<group>"; };
+		A48DD47F273ECE0200104C4E /* AuthenticateRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateRequestTests.swift; sourceTree = "<group>"; };
+		A48DD4BC2740092600104C4E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A48DD4BE27400B3600104C4E /* DeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentifier.swift; sourceTree = "<group>"; };
+		A48DD4C027400CD500104C4E /* Encodable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		A48DD4C42740150500104C4E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A48DD4E52740249800104C4E /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		A48DD4E827425B3400104C4E /* ColorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMode.swift; sourceTree = "<group>"; };
+		A48DD4EA27425B6000104C4E /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A48DD4EC2742646A00104C4E /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		A48DD4EE274264AB00104C4E /* RangedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedValue.swift; sourceTree = "<group>"; };
+		A48DD4F027427C7000104C4E /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		A48DD4F227427CBD00104C4E /* ShapeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
+		A48DD4F42742823C00104C4E /* EffectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectList.swift; sourceTree = "<group>"; };
+		A48DD4F72742A84700104C4E /* Ryhthm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ryhthm.swift; sourceTree = "<group>"; };
+		A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyhthmPosition.swift; sourceTree = "<group>"; };
+		A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyhthmMode.swift; sourceTree = "<group>"; };
+		A48DD4FE2742C3BF00104C4E /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		A48DD5002742C3E600104C4E /* PanelPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelPosition.swift; sourceTree = "<group>"; };
+		A48DD5052742CC1100104C4E /* FetchDeviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDeviceRequest.swift; sourceTree = "<group>"; };
+		A48DD5082742CFE400104C4E /* FetchDeviceRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDeviceRequestTests.swift; sourceTree = "<group>"; };
+		A48DD50B2742CFF900104C4E /* FetchDeviceRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchDeviceRequest+Mock.swift"; sourceTree = "<group>"; };
+		A48DD50D2742D0AE00104C4E /* FetchDeviceRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchDeviceRequest.json; sourceTree = "<group>"; };
+		A4DDF861274933300042274B /* FetchOnOffStateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchOnOffStateRequest.swift; sourceTree = "<group>"; };
+		A4DDF865274934570042274B /* FetchOnOffStateRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchOnOffStateRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF868274935360042274B /* FetchOnOffStateRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchOnOffStateRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF86A274935E20042274B /* FetchOnOffStateRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchOnOffStateRequest.json; sourceTree = "<group>"; };
+		A4DDF86C274939670042274B /* FetchBrightnessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBrightnessRequest.swift; sourceTree = "<group>"; };
+		A4DDF86F27493A660042274B /* FetchBrightnessRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchBrightnessRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF87127493A8C0042274B /* FetchBrightnessRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchBrightnessRequest.json; sourceTree = "<group>"; };
+		A4DDF87427493ABF0042274B /* FetchBrightnessRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBrightnessRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF87627493C260042274B /* FetchHueRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchHueRequest.swift; sourceTree = "<group>"; };
+		A4DDF87A27493CA00042274B /* FetchHueRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchHueRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF87C27493CAA0042274B /* FetchHueRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchHueRequest.json; sourceTree = "<group>"; };
+		A4DDF87E27493CDF0042274B /* FetchHueRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchHueRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF88027493DE00042274B /* FetchSaturationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSaturationRequest.swift; sourceTree = "<group>"; };
+		A4DDF88327493E170042274B /* FetchSaturationRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSaturationRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF88627493E2D0042274B /* FetchSaturationRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchSaturationRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF88827493E380042274B /* FetchSaturationRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchSaturationRequest.json; sourceTree = "<group>"; };
+		A4DDF88A27493F310042274B /* FetchColorTemperatureRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchColorTemperatureRequest.swift; sourceTree = "<group>"; };
+		A4DDF88D27493F660042274B /* FetchColorTemperatureRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchColorTemperatureRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF89027493F770042274B /* FetchColorTemperatureRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchColorTemperatureRequest.json; sourceTree = "<group>"; };
+		A4DDF89227493FFF0042274B /* FetchColorTemperatureRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchColorTemperatureRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF8942749407E0042274B /* FetchColorModeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchColorModeRequest.swift; sourceTree = "<group>"; };
+		A4DDF897274942150042274B /* FetchColorModeRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchColorModeRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4DDF8992749421F0042274B /* FetchColorModeRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchColorModeRequest.json; sourceTree = "<group>"; };
+		A4DDF89C274943600042274B /* FetchColorModeRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchColorModeRequestTests.swift; sourceTree = "<group>"; };
+		A4DDF89F27494C790042274B /* FetchSelectedEffectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSelectedEffectRequest.swift; sourceTree = "<group>"; };
+		A4EE8C0E274B9F9200BE7F55 /* FetchSelectedEffectRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchSelectedEffectRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4EE8C10274B9F9E00BE7F55 /* FetchSelectedEffectRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchSelectedEffectRequest.json; sourceTree = "<group>"; };
+		A4EE8C13274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSelectedEffectRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C15274BA10700BE7F55 /* UpdateSelectedEffectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSelectedEffectRequest.swift; sourceTree = "<group>"; };
+		A4EE8C18274BA47500BE7F55 /* UpdateSelectedEffectRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSelectedEffectRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C1F274BA76600BE7F55 /* FetchEffectsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEffectsRequest.swift; sourceTree = "<group>"; };
+		A4EE8C22274BA7E700BE7F55 /* FetchEffectsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEffectsRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C24274BA7F800BE7F55 /* FetchEffectsRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchEffectsRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4EE8C26274BA80500BE7F55 /* FetchEffectsRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchEffectsRequest.json; sourceTree = "<group>"; };
+		A4EE8C2A274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGlobalOrientationRequest.swift; sourceTree = "<group>"; };
+		A4EE8C2E274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGlobalOrientationRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C31274BACA200BE7F55 /* FetchGlobalOrientationRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchGlobalOrientationRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4EE8C33274BACAB00BE7F55 /* FetchGlobalOrientationRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchGlobalOrientationRequest.json; sourceTree = "<group>"; };
+		A4EE8C35274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePanelLayoutRequest.swift; sourceTree = "<group>"; };
+		A4EE8C38274BAF3900BE7F55 /* UpdatePanelLayoutRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePanelLayoutRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C3A274BB01F00BE7F55 /* FetchPanelLayoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPanelLayoutRequest.swift; sourceTree = "<group>"; };
+		A4EE8C3D274BB16900BE7F55 /* FetchPanelLayoutRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchPanelLayoutRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4EE8C3F274BB17300BE7F55 /* FetchPanelLayoutRequest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchPanelLayoutRequest.json; sourceTree = "<group>"; };
+		A4EE8C41274BB17D00BE7F55 /* FetchPanelLayoutRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPanelLayoutRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C44274BB59000BE7F55 /* IdentifyPanelsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyPanelsRequest.swift; sourceTree = "<group>"; };
+		A4EE8C46274BB73400BE7F55 /* IdentifyPanelsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyPanelsRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C48274BDE6600BE7F55 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		A4EE8C4A274BF6A000BE7F55 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		A4EE8C4D274C040700BE7F55 /* PluginConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginConfiguration.swift; sourceTree = "<group>"; };
+		A4EE8C4F274C0D7400BE7F55 /* PluginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
+		A4EE8C53274D412100BE7F55 /* ExecuteCommandRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteCommandRequest.swift; sourceTree = "<group>"; };
+		A4EE8C56274D4E3A00BE7F55 /* CommandRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRequest.swift; sourceTree = "<group>"; };
+		A4EE8C5A274D537700BE7F55 /* ExecuteCommandRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteCommandRequestTests.swift; sourceTree = "<group>"; };
+		A4EE8C5D274D5C1800BE7F55 /* CommandRequest+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandRequest+Mock.swift"; sourceTree = "<group>"; };
+		A4EE8C5F274D5D7200BE7F55 /* FetchPlugins.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchPlugins.json; sourceTree = "<group>"; };
+		A4EE8C62274E3F8600BE7F55 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		A4EE8C64274EB34C00BE7F55 /* PaletteColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteColor.swift; sourceTree = "<group>"; };
+		A4EE8C66274FF2F500BE7F55 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		A4EE8C68274FF30B00BE7F55 /* AnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
+		A4EE8C6A275013F700BE7F55 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A4EE8C71275260E100BE7F55 /* Sequence+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extension.swift"; sourceTree = "<group>"; };
+		A4EE8C732752610700BE7F55 /* SequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTests.swift; sourceTree = "<group>"; };
+		A4EE8C762752623600BE7F55 /* AnimationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationData.swift; sourceTree = "<group>"; };
+		A4EE8C782752633800BE7F55 /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
+		A4EE8C7A2752638F00BE7F55 /* AnimationDataFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDataFrame.swift; sourceTree = "<group>"; };
+		A4EE8C7C27526CE600BE7F55 /* ValueRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueRange.swift; sourceTree = "<group>"; };
+		A4EE8C7E2752704600BE7F55 /* FetchEffects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchEffects.json; sourceTree = "<group>"; };
+		A4EE8C802754CF7200BE7F55 /* NanoleafDeviceBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoleafDeviceBrowser.swift; sourceTree = "<group>"; };
+		A4EE8CB22755247E00BE7F55 /* DeviceAddressResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAddressResolver.swift; sourceTree = "<group>"; };
+		A4EE8CB42755445600BE7F55 /* DeviceAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAddress.swift; sourceTree = "<group>"; };
+		A4EE8CC52758D63600BE7F55 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A4FDBE5227480FA200012206 /* UpdateStateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStateRequest.swift; sourceTree = "<group>"; };
+		A4FDBE592748250000012206 /* UpdateStateRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStateRequestTests.swift; sourceTree = "<group>"; };
+		A4FDBE5C2748256500012206 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A48DD411273EC99E00104C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4652C9F28088721008E9DE7 /* Asynchrone in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48DD41B273EC99E00104C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4ABB17227492D3000D3662B /* Nanoleaf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A405C05C27482BB50073E33C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A427E4AA2819B9B8006EEADC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4CA2740184E00104C4E /* Requests */,
+				A427E4B12819C52E006EEADC /* AnimationDataFrameTests.swift */,
+				A427E4B52819CB73006EEADC /* AnimationDataTests.swift */,
+				A4EE8C732752610700BE7F55 /* SequenceTests.swift */,
+				A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */,
+				A427E4B32819C97D006EEADC /* PanelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A427E4AB2819B9C2006EEADC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A427E4A82819B641006EEADC /* Assertions.swift */,
+				A4FDBE5C2748256500012206 /* Mockable.swift */,
+				A48DD43E273ECA3100104C4E /* MockHTTPSessionDataTask.swift */,
+				A48DD43F273ECA3100104C4E /* MockHTTPSession.swift */,
+				A48DD474273ECE0200104C4E /* MockRequest.swift */,
+				A48DD476273ECE0200104C4E /* MockResponse.swift */,
+				A48DD473273ECE0200104C4E /* TestTargetClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A427E4AE2819BA04006EEADC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A427E4AF2819BA11006EEADC /* NanoleafClient+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A43AD624281EE3F50044599C /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A43AD625281EE4250044599C /* README.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		A48DD40A273EC99E00104C4E = {
+			isa = PBXGroup;
+			children = (
+				A4EE8CC42758D60A00BE7F55 /* Deployment */,
+				A43AD624281EE3F50044599C /* Documentation */,
+				A48DD416273EC99E00104C4E /* Nanoleaf */,
+				A48DD422273EC99E00104C4E /* NanoleafTests */,
+				A48DD415273EC99E00104C4E /* Products */,
+				A405C05C27482BB50073E33C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A48DD415273EC99E00104C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD414273EC99E00104C4E /* Nanoleaf.framework */,
+				A48DD41E273EC99E00104C4E /* NanoleafTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A48DD416273EC99E00104C4E /* Nanoleaf */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD42E273EC9B000104C4E /* Sources */,
+				A48DD42F273EC9B500104C4E /* Supporting Files */,
+			);
+			path = Nanoleaf;
+			sourceTree = "<group>";
+		};
+		A48DD422273EC99E00104C4E /* NanoleafTests */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4C82740181F00104C4E /* Sources */,
+			);
+			path = NanoleafTests;
+			sourceTree = "<group>";
+		};
+		A48DD42E273EC9B000104C4E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8CAD2754F49000BE7F55 /* Common */,
+				A4EE8CAC2754F46B00BE7F55 /* API Client */,
+				A4EE8CAB2754F45300BE7F55 /* Device Browser */,
+				A48DD46E273ECE0200104C4E /* NanoleafClient.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A48DD42F273EC9B500104C4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD417273EC99E00104C4E /* Nanoleaf.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A48DD430273ECA2200104C4E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD432273ECA3100104C4E /* Extensions */,
+				A48DD437273ECA3100104C4E /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A48DD432273ECA3100104C4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD435273ECA3100104C4E /* HTTPURLResponse+Extension.swift */,
+				A48DD433273ECA3100104C4E /* URLSessionDataTask+HTTPSessionDataTask.swift */,
+				A48DD434273ECA3100104C4E /* URLSession+HTTPSession.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A48DD437273ECA3100104C4E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD43B273ECA3100104C4E /* HTTPMethod.swift */,
+				A48DD43A273ECA3100104C4E /* HTTPRequest.swift */,
+				A48DD43C273ECA3100104C4E /* HTTPSession.swift */,
+				A48DD438273ECA3100104C4E /* HTTPSessionDataTask.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A48DD44E273ECE0200104C4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4C027400CD500104C4E /* Encodable+Extension.swift */,
+				A48DD451273ECE0200104C4E /* HTTPRequest+Nanoleaf.swift */,
+				A48DD454273ECE0200104C4E /* JSONDecoder+Nanoleaf.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A48DD455273ECE0200104C4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C61274E3F5B00BE7F55 /* Effect */,
+				A48DD4FD2742C2EC00104C4E /* Layout */,
+				A48DD4E727425B1F00104C4E /* Light Panel */,
+				A4EE8C4C274C03E700BE7F55 /* Plugin */,
+				A48DD4F62742A83200104C4E /* Ryhthm */,
+				A48DD45D273ECE0200104C4E /* Shared */,
+				A48DD4C42740150500104C4E /* Auth.swift */,
+				A4EE8C6A275013F700BE7F55 /* Color.swift */,
+				A48DD4E827425B3400104C4E /* ColorMode.swift */,
+				A48DD4EE274264AB00104C4E /* RangedValue.swift */,
+				A48DD4F227427CBD00104C4E /* ShapeType.swift */,
+				A48DD4EC2742646A00104C4E /* Value.swift */,
+				A4EE8C7C27526CE600BE7F55 /* ValueRange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A48DD45D273ECE0200104C4E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD45E273ECE0200104C4E /* APIError.swift */,
+				A48DD464273ECE0200104C4E /* Fixture.swift */,
+				A48DD4BC2740092600104C4E /* Logger.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A48DD46F273ECE0200104C4E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD470273ECE0200104C4E /* UnknownCaseRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A48DD478273ECE0200104C4E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF89E27494C1D0042274B /* Effect */,
+				A4EE8C29274BAA0C00BE7F55 /* Layout */,
+				A4DDF860274933110042274B /* State */,
+				A48DD47E273ECE0200104C4E /* AuthenticateRequest.swift */,
+				A48DD5052742CC1100104C4E /* FetchDeviceRequest.swift */,
+				A4EE8C44274BB59000BE7F55 /* IdentifyPanelsRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A48DD47B273ECE0200104C4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD47C273ECE0200104C4E /* AuthenticateRequest.json */,
+				A48DD47D273ECE0200104C4E /* AuthenticateRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A48DD4C82740181F00104C4E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A427E4AE2819BA04006EEADC /* Extensions */,
+				A427E4AB2819B9C2006EEADC /* Models */,
+				A427E4AA2819B9B8006EEADC /* Tests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A48DD4CA2740184E00104C4E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4CB2740185E00104C4E /* Authenticate */,
+				A4EE8C0C274B9F6700BE7F55 /* Effect */,
+				A4EE8C2C274BAC7900BE7F55 /* Layout */,
+				A4DDF8632749341C0042274B /* State */,
+				A48DD5072742CFCA00104C4E /* Fetch Light Panel Collection */,
+				A4FDBE592748250000012206 /* UpdateStateRequestTests.swift */,
+				A4EE8C46274BB73400BE7F55 /* IdentifyPanelsRequestTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A48DD4CB2740185E00104C4E /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD47B273ECE0200104C4E /* Mocks */,
+				A48DD47F273ECE0200104C4E /* AuthenticateRequestTests.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		A48DD4E727425B1F00104C4E /* Light Panel */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4F42742823C00104C4E /* EffectList.swift */,
+				A48DD4E52740249800104C4E /* Device.swift */,
+				A48DD4EA27425B6000104C4E /* State.swift */,
+			);
+			path = "Light Panel";
+			sourceTree = "<group>";
+		};
+		A48DD4F62742A83200104C4E /* Ryhthm */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4F72742A84700104C4E /* Ryhthm.swift */,
+				A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */,
+				A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */,
+			);
+			path = Ryhthm;
+			sourceTree = "<group>";
+		};
+		A48DD4FD2742C2EC00104C4E /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4FE2742C3BF00104C4E /* Details.swift */,
+				A48DD4F027427C7000104C4E /* Layout.swift */,
+				A48DD5002742C3E600104C4E /* PanelPosition.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A48DD5072742CFCA00104C4E /* Fetch Light Panel Collection */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD50A2742CFE700104C4E /* Mocks */,
+				A48DD5082742CFE400104C4E /* FetchDeviceRequestTests.swift */,
+			);
+			path = "Fetch Light Panel Collection";
+			sourceTree = "<group>";
+		};
+		A48DD50A2742CFE700104C4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD50D2742D0AE00104C4E /* FetchDeviceRequest.json */,
+				A48DD50B2742CFF900104C4E /* FetchDeviceRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF860274933110042274B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF86C274939670042274B /* FetchBrightnessRequest.swift */,
+				A4DDF8942749407E0042274B /* FetchColorModeRequest.swift */,
+				A4DDF88A27493F310042274B /* FetchColorTemperatureRequest.swift */,
+				A4DDF87627493C260042274B /* FetchHueRequest.swift */,
+				A4DDF861274933300042274B /* FetchOnOffStateRequest.swift */,
+				A4DDF88027493DE00042274B /* FetchSaturationRequest.swift */,
+				A4FDBE5227480FA200012206 /* UpdateStateRequest.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		A4DDF8632749341C0042274B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF86E27493A530042274B /* Fetch Brightness */,
+				A4DDF896274942040042274B /* Fetch Color Mode */,
+				A4DDF88C27493F550042274B /* Fetch Color Temperature */,
+				A4DDF88227493DFB0042274B /* Fetch Saturation */,
+				A4DDF87827493C8D0042274B /* Fetch Hue */,
+				A4DDF864274934390042274B /* Fetch On Off State */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		A4DDF864274934390042274B /* Fetch On Off State */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF867274935220042274B /* Mocks */,
+				A4DDF865274934570042274B /* FetchOnOffStateRequestTests.swift */,
+			);
+			path = "Fetch On Off State";
+			sourceTree = "<group>";
+		};
+		A4DDF867274935220042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF86A274935E20042274B /* FetchOnOffStateRequest.json */,
+				A4DDF868274935360042274B /* FetchOnOffStateRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF86E27493A530042274B /* Fetch Brightness */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF87327493AA90042274B /* Mocks */,
+				A4DDF87427493ABF0042274B /* FetchBrightnessRequestTests.swift */,
+			);
+			path = "Fetch Brightness";
+			sourceTree = "<group>";
+		};
+		A4DDF87327493AA90042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF87127493A8C0042274B /* FetchBrightnessRequest.json */,
+				A4DDF86F27493A660042274B /* FetchBrightnessRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF87827493C8D0042274B /* Fetch Hue */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF87927493C970042274B /* Mocks */,
+				A4DDF87E27493CDF0042274B /* FetchHueRequestTests.swift */,
+			);
+			path = "Fetch Hue";
+			sourceTree = "<group>";
+		};
+		A4DDF87927493C970042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF87C27493CAA0042274B /* FetchHueRequest.json */,
+				A4DDF87A27493CA00042274B /* FetchHueRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF88227493DFB0042274B /* Fetch Saturation */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF88527493E1A0042274B /* Mocks */,
+				A4DDF88327493E170042274B /* FetchSaturationRequestTests.swift */,
+			);
+			path = "Fetch Saturation";
+			sourceTree = "<group>";
+		};
+		A4DDF88527493E1A0042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF88627493E2D0042274B /* FetchSaturationRequest+Mock.swift */,
+				A4DDF88827493E380042274B /* FetchSaturationRequest.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF88C27493F550042274B /* Fetch Color Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF88F27493F690042274B /* Mocks */,
+				A4DDF89227493FFF0042274B /* FetchColorTemperatureRequestTests.swift */,
+			);
+			path = "Fetch Color Temperature";
+			sourceTree = "<group>";
+		};
+		A4DDF88F27493F690042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF89027493F770042274B /* FetchColorTemperatureRequest.json */,
+				A4DDF88D27493F660042274B /* FetchColorTemperatureRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF896274942040042274B /* Fetch Color Mode */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF89B274943460042274B /* Mocks */,
+				A4DDF89C274943600042274B /* FetchColorModeRequestTests.swift */,
+			);
+			path = "Fetch Color Mode";
+			sourceTree = "<group>";
+		};
+		A4DDF89B274943460042274B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDF8992749421F0042274B /* FetchColorModeRequest.json */,
+				A4DDF897274942150042274B /* FetchColorModeRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4DDF89E27494C1D0042274B /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C55274D4B5E00BE7F55 /* Command */,
+				A4EE8C1F274BA76600BE7F55 /* FetchEffectsRequest.swift */,
+				A4DDF89F27494C790042274B /* FetchSelectedEffectRequest.swift */,
+				A4EE8C15274BA10700BE7F55 /* UpdateSelectedEffectRequest.swift */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		A4EE8C0C274B9F6700BE7F55 /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C58274D528800BE7F55 /* Commands */,
+				A4EE8C21274BA7B200BE7F55 /* Fetch Effects */,
+				A4EE8C0D274B9F7200BE7F55 /* Fetch Selected Effect */,
+				A4EE8C17274BA46500BE7F55 /* Update Selected Effect */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		A4EE8C0D274B9F7200BE7F55 /* Fetch Selected Effect */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C12274B9FCA00BE7F55 /* Mocks */,
+				A4EE8C13274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift */,
+			);
+			path = "Fetch Selected Effect";
+			sourceTree = "<group>";
+		};
+		A4EE8C12274B9FCA00BE7F55 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C10274B9F9E00BE7F55 /* FetchSelectedEffectRequest.json */,
+				A4EE8C0E274B9F9200BE7F55 /* FetchSelectedEffectRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4EE8C17274BA46500BE7F55 /* Update Selected Effect */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C18274BA47500BE7F55 /* UpdateSelectedEffectRequestTests.swift */,
+			);
+			path = "Update Selected Effect";
+			sourceTree = "<group>";
+		};
+		A4EE8C21274BA7B200BE7F55 /* Fetch Effects */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C28274BA83600BE7F55 /* Mocks */,
+				A4EE8C22274BA7E700BE7F55 /* FetchEffectsRequestTests.swift */,
+			);
+			path = "Fetch Effects";
+			sourceTree = "<group>";
+		};
+		A4EE8C28274BA83600BE7F55 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C26274BA80500BE7F55 /* FetchEffectsRequest.json */,
+				A4EE8C24274BA7F800BE7F55 /* FetchEffectsRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4EE8C29274BAA0C00BE7F55 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C2A274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift */,
+				A4EE8C3A274BB01F00BE7F55 /* FetchPanelLayoutRequest.swift */,
+				A4EE8C35274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A4EE8C2C274BAC7900BE7F55 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C2D274BAC8600BE7F55 /* Fetch Gloabl Orientation */,
+				A4EE8C3C274BB15800BE7F55 /* Fetch Panel Layout */,
+				A4EE8C37274BAF2200BE7F55 /* Update Panel Layout */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A4EE8C2D274BAC8600BE7F55 /* Fetch Gloabl Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C30274BAC9A00BE7F55 /* Mocks */,
+				A4EE8C2E274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift */,
+			);
+			path = "Fetch Gloabl Orientation";
+			sourceTree = "<group>";
+		};
+		A4EE8C30274BAC9A00BE7F55 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C33274BACAB00BE7F55 /* FetchGlobalOrientationRequest.json */,
+				A4EE8C31274BACA200BE7F55 /* FetchGlobalOrientationRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4EE8C37274BAF2200BE7F55 /* Update Panel Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C38274BAF3900BE7F55 /* UpdatePanelLayoutRequestTests.swift */,
+			);
+			path = "Update Panel Layout";
+			sourceTree = "<group>";
+		};
+		A4EE8C3C274BB15800BE7F55 /* Fetch Panel Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C43274BB18400BE7F55 /* Mocks */,
+				A4EE8C41274BB17D00BE7F55 /* FetchPanelLayoutRequestTests.swift */,
+			);
+			path = "Fetch Panel Layout";
+			sourceTree = "<group>";
+		};
+		A4EE8C43274BB18400BE7F55 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C3F274BB17300BE7F55 /* FetchPanelLayoutRequest.json */,
+				A4EE8C3D274BB16900BE7F55 /* FetchPanelLayoutRequest+Mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4EE8C4C274C03E700BE7F55 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C4A274BF6A000BE7F55 /* Plugin.swift */,
+				A4EE8C4D274C040700BE7F55 /* PluginConfiguration.swift */,
+				A4EE8C4F274C0D7400BE7F55 /* PluginType.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		A4EE8C55274D4B5E00BE7F55 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C53274D412100BE7F55 /* ExecuteCommandRequest.swift */,
+				A4EE8C56274D4E3A00BE7F55 /* CommandRequest.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		A4EE8C58274D528800BE7F55 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C5C274D5BEE00BE7F55 /* Mocks */,
+				A4EE8C5A274D537700BE7F55 /* ExecuteCommandRequestTests.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		A4EE8C5C274D5BEE00BE7F55 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C5D274D5C1800BE7F55 /* CommandRequest+Mock.swift */,
+				A4EE8C5F274D5D7200BE7F55 /* FetchPlugins.json */,
+				A4EE8C7E2752704600BE7F55 /* FetchEffects.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A4EE8C61274E3F5B00BE7F55 /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C752752622A00BE7F55 /* Animation Data */,
+				A4EE8C68274FF30B00BE7F55 /* AnimationType.swift */,
+				A4EE8C66274FF2F500BE7F55 /* ColorType.swift */,
+				A4EE8C48274BDE6600BE7F55 /* Command.swift */,
+				A4EE8C62274E3F8600BE7F55 /* Effect.swift */,
+				A4EE8C64274EB34C00BE7F55 /* PaletteColor.swift */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		A4EE8C752752622A00BE7F55 /* Animation Data */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C762752623600BE7F55 /* AnimationData.swift */,
+				A4EE8C7A2752638F00BE7F55 /* AnimationDataFrame.swift */,
+				A4EE8C782752633800BE7F55 /* Panel.swift */,
+			);
+			path = "Animation Data";
+			sourceTree = "<group>";
+		};
+		A4EE8CAB2754F45300BE7F55 /* Device Browser */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8CAF2754F5F200BE7F55 /* Models */,
+				A4EE8CB22755247E00BE7F55 /* DeviceAddressResolver.swift */,
+				A4EE8C802754CF7200BE7F55 /* NanoleafDeviceBrowser.swift */,
+			);
+			path = "Device Browser";
+			sourceTree = "<group>";
+		};
+		A4EE8CAC2754F46B00BE7F55 /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD430273ECA2200104C4E /* Core */,
+				A48DD44E273ECE0200104C4E /* Extensions */,
+				A48DD455273ECE0200104C4E /* Models */,
+				A48DD46F273ECE0200104C4E /* Protocols */,
+				A48DD478273ECE0200104C4E /* Requests */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
+		A4EE8CAD2754F49000BE7F55 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8CAE2754F49500BE7F55 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A4EE8CAE2754F49500BE7F55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8C71275260E100BE7F55 /* Sequence+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4EE8CAF2754F5F200BE7F55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A48DD4BE27400B3600104C4E /* DeviceIdentifier.swift */,
+				A4EE8CB42755445600BE7F55 /* DeviceAddress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4EE8CC42758D60A00BE7F55 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE8CC52758D63600BE7F55 /* Package.swift */,
+			);
+			name = Deployment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A48DD40F273EC99E00104C4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48DD425273EC99E00104C4E /* Nanoleaf.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A48DD413273EC99E00104C4E /* Nanoleaf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48DD428273EC99E00104C4E /* Build configuration list for PBXNativeTarget "Nanoleaf" */;
+			buildPhases = (
+				A48DD40F273EC99E00104C4E /* Headers */,
+				A48DD410273EC99E00104C4E /* Sources */,
+				A48DD411273EC99E00104C4E /* Frameworks */,
+				A48DD412273EC99E00104C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nanoleaf;
+			packageProductDependencies = (
+				A4652C9E28088721008E9DE7 /* Asynchrone */,
+			);
+			productName = Nanoleaf;
+			productReference = A48DD414273EC99E00104C4E /* Nanoleaf.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A48DD41D273EC99E00104C4E /* NanoleafTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48DD42B273EC99E00104C4E /* Build configuration list for PBXNativeTarget "NanoleafTests" */;
+			buildPhases = (
+				A48DD41A273EC99E00104C4E /* Sources */,
+				A48DD41B273EC99E00104C4E /* Frameworks */,
+				A48DD41C273EC99E00104C4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A48DD421273EC99E00104C4E /* PBXTargetDependency */,
+			);
+			name = NanoleafTests;
+			productName = NanoleafTests;
+			productReference = A48DD41E273EC99E00104C4E /* NanoleafTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A48DD40B273EC99E00104C4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A48DD413273EC99E00104C4E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A48DD41D273EC99E00104C4E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = A48DD40E273EC99E00104C4E /* Build configuration list for PBXProject "Nanoleaf" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A48DD40A273EC99E00104C4E;
+			packageReferences = (
+				A4652C9D28088721008E9DE7 /* XCRemoteSwiftPackageReference "Asynchrone" */,
+			);
+			productRefGroup = A48DD415273EC99E00104C4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A48DD413273EC99E00104C4E /* Nanoleaf */,
+				A48DD41D273EC99E00104C4E /* NanoleafTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A48DD412273EC99E00104C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48DD41C273EC99E00104C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EE8C60274D5D7200BE7F55 /* FetchPlugins.json in Resources */,
+				A4DDF88927493E380042274B /* FetchSaturationRequest.json in Resources */,
+				A4DDF89A2749421F0042274B /* FetchColorModeRequest.json in Resources */,
+				A4DDF86B274935E20042274B /* FetchOnOffStateRequest.json in Resources */,
+				A4EE8C34274BACAB00BE7F55 /* FetchGlobalOrientationRequest.json in Resources */,
+				A4EE8C7F2752704600BE7F55 /* FetchEffects.json in Resources */,
+				A4EE8C27274BA80500BE7F55 /* FetchEffectsRequest.json in Resources */,
+				A4EE8C40274BB17300BE7F55 /* FetchPanelLayoutRequest.json in Resources */,
+				A48DD50E2742D0AE00104C4E /* FetchDeviceRequest.json in Resources */,
+				A48DD4B6273EE4F700104C4E /* AuthenticateRequest.json in Resources */,
+				A4DDF87227493A8C0042274B /* FetchBrightnessRequest.json in Resources */,
+				A4EE8C11274B9F9E00BE7F55 /* FetchSelectedEffectRequest.json in Resources */,
+				A4DDF87D27493CAA0042274B /* FetchHueRequest.json in Resources */,
+				A4DDF89127493F770042274B /* FetchColorTemperatureRequest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A48DD410273EC99E00104C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EE8C54274D412100BE7F55 /* ExecuteCommandRequest.swift in Sources */,
+				A48DD44A273ECA3100104C4E /* HTTPSession.swift in Sources */,
+				A4DDF86D274939670042274B /* FetchBrightnessRequest.swift in Sources */,
+				A4EE8C4E274C040700BE7F55 /* PluginConfiguration.swift in Sources */,
+				A4EE8CB32755247E00BE7F55 /* DeviceAddressResolver.swift in Sources */,
+				A4EE8C6B275013F700BE7F55 /* Color.swift in Sources */,
+				A48DD4F82742A84700104C4E /* Ryhthm.swift in Sources */,
+				A4DDF862274933300042274B /* FetchOnOffStateRequest.swift in Sources */,
+				A4EE8C772752623600BE7F55 /* AnimationData.swift in Sources */,
+				A4DDF87727493C260042274B /* FetchHueRequest.swift in Sources */,
+				A4EE8C792752633800BE7F55 /* Panel.swift in Sources */,
+				A48DD48C273ECE0200104C4E /* JSONDecoder+Nanoleaf.swift in Sources */,
+				A48DD446273ECA3100104C4E /* HTTPSessionDataTask.swift in Sources */,
+				A4EE8C812754CF7200BE7F55 /* NanoleafDeviceBrowser.swift in Sources */,
+				A48DD489273ECE0200104C4E /* HTTPRequest+Nanoleaf.swift in Sources */,
+				A48DD5012742C3E600104C4E /* PanelPosition.swift in Sources */,
+				A48DD493273ECE0200104C4E /* APIError.swift in Sources */,
+				A4EE8C57274D4E3A00BE7F55 /* CommandRequest.swift in Sources */,
+				A4EE8C63274E3F8600BE7F55 /* Effect.swift in Sources */,
+				A48DD5062742CC1100104C4E /* FetchDeviceRequest.swift in Sources */,
+				A4EE8C45274BB59000BE7F55 /* IdentifyPanelsRequest.swift in Sources */,
+				A48DD4F127427C7000104C4E /* Layout.swift in Sources */,
+				A48DD499273ECE0300104C4E /* Fixture.swift in Sources */,
+				A4EE8C65274EB34C00BE7F55 /* PaletteColor.swift in Sources */,
+				A4EE8C49274BDE6600BE7F55 /* Command.swift in Sources */,
+				A4EE8C7D27526CE600BE7F55 /* ValueRange.swift in Sources */,
+				A48DD4F327427CBD00104C4E /* ShapeType.swift in Sources */,
+				A4DDF88B27493F310042274B /* FetchColorTemperatureRequest.swift in Sources */,
+				A4DDF8A027494C790042274B /* FetchSelectedEffectRequest.swift in Sources */,
+				A48DD4BD2740092600104C4E /* Logger.swift in Sources */,
+				A4EE8C67274FF2F500BE7F55 /* ColorType.swift in Sources */,
+				A4DDF8952749407E0042274B /* FetchColorModeRequest.swift in Sources */,
+				A4DDF88127493DE00042274B /* FetchSaturationRequest.swift in Sources */,
+				A48DD443273ECA3100104C4E /* URLSession+HTTPSession.swift in Sources */,
+				A4EE8C36274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift in Sources */,
+				A48DD4FA2742A87B00104C4E /* RyhthmPosition.swift in Sources */,
+				A4EE8C2B274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift in Sources */,
+				A48DD4BF27400B3600104C4E /* DeviceIdentifier.swift in Sources */,
+				A4EE8C72275260E100BE7F55 /* Sequence+Extension.swift in Sources */,
+				A4EE8C3B274BB01F00BE7F55 /* FetchPanelLayoutRequest.swift in Sources */,
+				A4EE8C69274FF30B00BE7F55 /* AnimationType.swift in Sources */,
+				A48DD4F52742823C00104C4E /* EffectList.swift in Sources */,
+				A48DD444273ECA3100104C4E /* HTTPURLResponse+Extension.swift in Sources */,
+				A48DD4A2273ECE0300104C4E /* UnknownCaseRepresentable.swift in Sources */,
+				A48DD4E927425B3400104C4E /* ColorMode.swift in Sources */,
+				A4EE8C20274BA76600BE7F55 /* FetchEffectsRequest.swift in Sources */,
+				A48DD4E62740249800104C4E /* Device.swift in Sources */,
+				A48DD4FC2742A8A200104C4E /* RyhthmMode.swift in Sources */,
+				A4FDBE5327480FA200012206 /* UpdateStateRequest.swift in Sources */,
+				A4EE8C4B274BF6A000BE7F55 /* Plugin.swift in Sources */,
+				A4EE8CB52755445600BE7F55 /* DeviceAddress.swift in Sources */,
+				A48DD448273ECA3100104C4E /* HTTPRequest.swift in Sources */,
+				A4EE8C7B2752638F00BE7F55 /* AnimationDataFrame.swift in Sources */,
+				A48DD4FF2742C3BF00104C4E /* Details.swift in Sources */,
+				A48DD4EF274264AB00104C4E /* RangedValue.swift in Sources */,
+				A48DD4ED2742646A00104C4E /* Value.swift in Sources */,
+				A48DD4C52740150500104C4E /* Auth.swift in Sources */,
+				A48DD4C227400CD500104C4E /* Encodable+Extension.swift in Sources */,
+				A48DD442273ECA3100104C4E /* URLSessionDataTask+HTTPSessionDataTask.swift in Sources */,
+				A48DD4AB273ECE0300104C4E /* AuthenticateRequest.swift in Sources */,
+				A48DD449273ECA3100104C4E /* HTTPMethod.swift in Sources */,
+				A4EE8C50274C0D7400BE7F55 /* PluginType.swift in Sources */,
+				A48DD4EB27425B6000104C4E /* State.swift in Sources */,
+				A4EE8C16274BA10700BE7F55 /* UpdateSelectedEffectRequest.swift in Sources */,
+				A48DD4A1273ECE0300104C4E /* NanoleafClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48DD41A273EC99E00104C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48DD5092742CFE400104C4E /* FetchDeviceRequestTests.swift in Sources */,
+				A4DDF88427493E170042274B /* FetchSaturationRequestTests.swift in Sources */,
+				A4DDF87F27493CDF0042274B /* FetchHueRequestTests.swift in Sources */,
+				A4EE8C39274BAF3900BE7F55 /* UpdatePanelLayoutRequestTests.swift in Sources */,
+				A4DDF87527493ABF0042274B /* FetchBrightnessRequestTests.swift in Sources */,
+				A4EE8C742752610700BE7F55 /* SequenceTests.swift in Sources */,
+				A4EE8C3E274BB16900BE7F55 /* FetchPanelLayoutRequest+Mock.swift in Sources */,
+				A427E4AD2819B9D2006EEADC /* MockHTTPSessionDataTask.swift in Sources */,
+				A4EE8C25274BA7F800BE7F55 /* FetchEffectsRequest+Mock.swift in Sources */,
+				A48DD50C2742CFF900104C4E /* FetchDeviceRequest+Mock.swift in Sources */,
+				A4EE8C2F274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift in Sources */,
+				A427E4AC2819B9D2006EEADC /* MockHTTPSession.swift in Sources */,
+				A48DD4B3273EE26600104C4E /* NanoleafAPIClientTests.swift in Sources */,
+				A4EE8C14274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift in Sources */,
+				A48DD4B5273EE4E600104C4E /* AuthenticateRequest+Mock.swift in Sources */,
+				A4DDF87B27493CA00042274B /* FetchHueRequest+Mock.swift in Sources */,
+				A4EE8C42274BB17D00BE7F55 /* FetchPanelLayoutRequestTests.swift in Sources */,
+				A4DDF88E27493F660042274B /* FetchColorTemperatureRequest+Mock.swift in Sources */,
+				A4EE8C19274BA47500BE7F55 /* UpdateSelectedEffectRequestTests.swift in Sources */,
+				A4EE8C5E274D5C1800BE7F55 /* CommandRequest+Mock.swift in Sources */,
+				A4EE8C32274BACA200BE7F55 /* FetchGlobalOrientationRequest+Mock.swift in Sources */,
+				A427E4B62819CB73006EEADC /* AnimationDataTests.swift in Sources */,
+				A4EE8C23274BA7E700BE7F55 /* FetchEffectsRequestTests.swift in Sources */,
+				A4FDBE5A2748250000012206 /* UpdateStateRequestTests.swift in Sources */,
+				A4DDF89D274943600042274B /* FetchColorModeRequestTests.swift in Sources */,
+				A48DD4B4273EE2CE00104C4E /* TestTargetClass.swift in Sources */,
+				A48DD4B7273EE4FC00104C4E /* AuthenticateRequestTests.swift in Sources */,
+				A4DDF869274935360042274B /* FetchOnOffStateRequest+Mock.swift in Sources */,
+				A4EE8C47274BB73400BE7F55 /* IdentifyPanelsRequestTests.swift in Sources */,
+				A427E4B22819C52E006EEADC /* AnimationDataFrameTests.swift in Sources */,
+				A427E4B02819BA11006EEADC /* NanoleafClient+Extension.swift in Sources */,
+				A4DDF866274934570042274B /* FetchOnOffStateRequestTests.swift in Sources */,
+				A4FDBE5D2748256500012206 /* Mockable.swift in Sources */,
+				A427E4B42819C97D006EEADC /* PanelTests.swift in Sources */,
+				A4DDF89327493FFF0042274B /* FetchColorTemperatureRequestTests.swift in Sources */,
+				A4DDF88727493E2E0042274B /* FetchSaturationRequest+Mock.swift in Sources */,
+				A4DDF898274942150042274B /* FetchColorModeRequest+Mock.swift in Sources */,
+				A4DDF87027493A660042274B /* FetchBrightnessRequest+Mock.swift in Sources */,
+				A427E4A92819B641006EEADC /* Assertions.swift in Sources */,
+				A4EE8C5B274D537700BE7F55 /* ExecuteCommandRequestTests.swift in Sources */,
+				A48DD4E22740213200104C4E /* MockResponse.swift in Sources */,
+				A4EE8C0F274B9F9200BE7F55 /* FetchSelectedEffectRequest+Mock.swift in Sources */,
+				A48DD4BB273EE56C00104C4E /* MockRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A48DD421273EC99E00104C4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A48DD413273EC99E00104C4E /* Nanoleaf */;
+			targetProxy = A48DD420273EC99E00104C4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A48DD426273EC99E00104C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A48DD427273EC99E00104C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A48DD429273EC99E00104C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reddavis.Nanoleaf;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos iphonesimulator appletvsimulator watchsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A48DD42A273EC99E00104C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reddavis.Nanoleaf;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos iphonesimulator appletvsimulator watchsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A48DD42C273EC99E00104C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reddavis.NanoleafTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "";
+				SUPPORTED_PLATFORMS = "macosx watchsimulator watchos iphonesimulator iphoneos appletvsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A48DD42D273EC99E00104C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reddavis.NanoleafTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "";
+				SUPPORTED_PLATFORMS = "macosx watchsimulator watchos iphonesimulator iphoneos appletvsimulator appletvos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A48DD40E273EC99E00104C4E /* Build configuration list for PBXProject "Nanoleaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48DD426273EC99E00104C4E /* Debug */,
+				A48DD427273EC99E00104C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48DD428273EC99E00104C4E /* Build configuration list for PBXNativeTarget "Nanoleaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48DD429273EC99E00104C4E /* Debug */,
+				A48DD42A273EC99E00104C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A48DD42B273EC99E00104C4E /* Build configuration list for PBXNativeTarget "NanoleafTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48DD42C273EC99E00104C4E /* Debug */,
+				A48DD42D273EC99E00104C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4652C9D28088721008E9DE7 /* XCRemoteSwiftPackageReference "Asynchrone" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reddavis/Asynchrone.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4652C9E28088721008E9DE7 /* Asynchrone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4652C9D28088721008E9DE7 /* XCRemoteSwiftPackageReference "Asynchrone" */;
+			productName = Asynchrone;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A48DD40B273EC99E00104C4E /* Project object */;
+}

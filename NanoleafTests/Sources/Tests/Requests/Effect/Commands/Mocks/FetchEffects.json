@@ -1,0 +1,88 @@
+{
+  "animations": [
+    {
+      "loop": true,
+      "version": "1.0",
+      "animName": "Slow",
+      "animType": "custom",
+      "animData": "7 224 7 0 0 0 0 0 0 0 0 255 5 0 0 0 0 5 0 0 0 255 5 0 0 0 0 5 0 0 0 255 5 0 0 0 0 5 89 2 0 0 0 0 0 255 0 0 0 10 210 2 0 0 0 0 0 255 255 0 0 15 116 2 0 0 0 0 0 0 255 0 0 20 173 2 0 0 0 0 0 0 255 255 0 25 126 2 0 0 0 0 0 0 0 255 0 30 81 2 0 0 0 0 0 255 0 255 0 35"
+    },
+    {
+      "loop": true,
+      "version": "1.0",
+      "animName": "Flames",
+      "animType": "highlight",
+      "colorType": "HSB",
+      "animData": null,
+      "palette": [
+        {
+          "hue": 30,
+          "saturation": 100,
+          "brightness": 100,
+          "probability": 58
+        },
+        {
+          "hue": 45,
+          "saturation": 100,
+          "brightness": 100,
+          "probability": 8
+        },
+        {
+          "hue": 25,
+          "saturation": 100,
+          "brightness": 100,
+          "probability": 25
+        },
+        {
+          "hue": 40,
+          "saturation": 100,
+          "brightness": 100,
+          "probability": 8
+        }
+      ],
+      "brightnessRange": {
+        "minValue": 40,
+        "maxValue": 100
+      },
+      "transTime": {
+        "minValue": 2,
+        "maxValue": 10
+      },
+      "delayTime": {
+        "minValue": 0,
+        "maxValue": 0
+      }
+    },
+    {
+      "delayTime": {
+        "minValue": 0,
+        "maxValue": 0
+      },
+      "version": "1.0",
+      "animName": "Lightning",
+      "animType": "random",
+      "colorType": "HSB",
+      "animData": null,
+      "palette": [
+        {
+          "hue": 0,
+          "saturation": 0,
+          "brightness": 100
+        },
+        {
+          "hue": 0,
+          "saturation": 0,
+          "brightness": 0
+        }
+      ],
+      "brightnessRange": {
+        "minValue": 25,
+        "maxValue": 100
+      },
+      "transTime": {
+        "minValue": 0,
+        "maxValue": 0
+      }
+    }
+  ]
+}

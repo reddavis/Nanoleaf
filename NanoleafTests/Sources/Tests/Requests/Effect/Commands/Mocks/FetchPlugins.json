@@ -1,0 +1,64 @@
+{
+  "plugins": [
+    {
+      "uuid": "027842e4-e1d6-4a4c-a731-be74a1ebd4cf",
+      "name": "Flow",
+      "description": "Imagine you dump each color onto your panels. Watch the color flow in a direction of your choosing.",
+      "author": "Nanoleaf",
+      "type": "color",
+      "tags": [
+        "zen",
+        "happy"
+      ],
+      "features": [
+        "touch"
+      ],
+      "pluginConfig": [
+        {
+          "name": "loop",
+          "type": "bool",
+          "defaultValue": true
+        },
+        {
+          "name": "transTime",
+          "type": "int",
+          "defaultValue": 24,
+          "minValue": 1,
+          "maxValue": 600
+        },
+        {
+          "name": "delayTime",
+          "type": "int",
+          "defaultValue": 0,
+          "minValue": 0,
+          "maxValue": 600
+        },
+        {
+          "name": "linDirection",
+          "type": "string",
+          "defaultValue": "right",
+          "strings": [
+            "left",
+            "right",
+            "up",
+            "down"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "23e70ff4-458c-4852-826f-9315d89ee6ed",
+      "name": "Meteor Shower",
+      "description": "Like a meteor shower of music notes, watch as a stardust of colors sprinkle across the panels to the pitch of the music. Colors on the left indicate low notes while the right represents higher notes.",
+      "author": "Nanoleaf",
+      "type": "rhythm",
+      "tags": [
+        "party",
+        " electronic",
+        " vibrant",
+        " pop"
+      ],
+      "features": []
+    }
+  ]
+}

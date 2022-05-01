@@ -1,0 +1,20 @@
+{
+  "numPanels": 2,
+  "sideLength": 150,
+  "positionData": [
+    {
+      "panelId": 107,
+      "x": -74,
+      "y": 43,
+      "o": 180,
+      "shapeType": 0
+    },
+    {
+      "panelId": 114,
+      "x": -149,
+      "y": 0,
+      "o": 360,
+      "shapeType": 0
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Light Panels Name",
+  "serialNo": "S16331A0217",
+  "manufacturer": "Nanoleaf",
+  "firmwareVersion": "1.5.0",
+  "model": "NL22",
+  "state": {
+    "on": {
+      "value": false
+    },
+    "brightness": {
+      "value": 100,
+      "max": 100,
+      "min": 0
+    },
+    "hue": {
+      "value": 0,
+      "max": 360,
+      "min": 0
+    },
+    "sat": {
+      "value": 0,
+      "max": 100,
+      "min": 0
+    },
+    "ct": {
+      "value": 4000,
+      "max": 100,
+      "min": 0
+    },
+    "colorMode": "effect"
+  },
+  "effects": {
+    "select": "Flames",
+    "effectsList": [
+      "Color Burst",
+      "Flames",
+      "Forest",
+      "Inner Peace",
+      "Nemo",
+      "Northern Lights",
+      "Romantic",
+      "Snowfall"
+    ]
+  },
+  "panelLayout": {
+    "layout": {
+      "numPanels": 2,
+      "sideLength": 150,
+      "positionData": [
+        {
+          "panelId": 107,
+          "x": -74,
+          "y": 43,
+          "o": 180,
+          "shapeType": 0
+        },
+        {
+          "panelId": 114,
+          "x": -149,
+          "y": 0,
+          "o": 360,
+          "shapeType": 0
+        }
+      ]
+    },
+    "globalOrientation": {
+      "value": 120,
+      "max": 360,
+      "min": 0
+    }
+  },
+  "rhythm": {
+    "rhythmConnected": true,
+    "rhythmActive": true,
+    "rhythmId": 309,
+    "hardwareVersion": "1.4",
+    "firmwareVersion": "1.7-R",
+    "auxAvailable": true,
+    "rhythmMode": 1,
+    "rhythmPos": {
+      "x": 299,
+      "y": -86,
+      "o": 300
+    }
+  }
+}
