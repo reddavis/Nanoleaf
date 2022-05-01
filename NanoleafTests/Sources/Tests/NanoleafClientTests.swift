@@ -1,7 +1,7 @@
 import XCTest
 @testable import Nanoleaf
 
-final class NanoleafTests: XCTestCase {
+final class NanoleafClientTests: XCTestCase {
     private var apiClient: NanoleafClient!
     private var session: MockHTTPSession!
     

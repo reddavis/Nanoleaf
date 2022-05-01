@@ -30,7 +30,7 @@
 		A48DD4A1273ECE0300104C4E /* NanoleafClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD46E273ECE0200104C4E /* NanoleafClient.swift */; };
 		A48DD4A2273ECE0300104C4E /* UnknownCaseRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD470273ECE0200104C4E /* UnknownCaseRepresentable.swift */; };
 		A48DD4AB273ECE0300104C4E /* AuthenticateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD47E273ECE0200104C4E /* AuthenticateRequest.swift */; };
-		A48DD4B3273EE26600104C4E /* NanoleafAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */; };
+		A48DD4B3273EE26600104C4E /* NanoleafClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD477273ECE0200104C4E /* NanoleafClientTests.swift */; };
 		A48DD4B4273EE2CE00104C4E /* TestTargetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD473273ECE0200104C4E /* TestTargetClass.swift */; };
 		A48DD4B5273EE4E600104C4E /* AuthenticateRequest+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD47D273ECE0200104C4E /* AuthenticateRequest+Mock.swift */; };
 		A48DD4B6273EE4F700104C4E /* AuthenticateRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = A48DD47C273ECE0200104C4E /* AuthenticateRequest.json */; };
@@ -172,7 +172,7 @@
 		A48DD473273ECE0200104C4E /* TestTargetClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTargetClass.swift; sourceTree = "<group>"; };
 		A48DD474273ECE0200104C4E /* MockRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
 		A48DD476273ECE0200104C4E /* MockResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
-		A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoleafAPIClientTests.swift; sourceTree = "<group>"; };
+		A48DD477273ECE0200104C4E /* NanoleafClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NanoleafClientTests.swift; sourceTree = "<group>"; };
 		A48DD47C273ECE0200104C4E /* AuthenticateRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AuthenticateRequest.json; sourceTree = "<group>"; };
 		A48DD47D273ECE0200104C4E /* AuthenticateRequest+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AuthenticateRequest+Mock.swift"; sourceTree = "<group>"; };
 		A48DD47E273ECE0200104C4E /* AuthenticateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateRequest.swift; sourceTree = "<group>"; };
@@ -307,9 +307,9 @@
 				A48DD4CA2740184E00104C4E /* Requests */,
 				A427E4B12819C52E006EEADC /* AnimationDataFrameTests.swift */,
 				A427E4B52819CB73006EEADC /* AnimationDataTests.swift */,
-				A4EE8C732752610700BE7F55 /* SequenceTests.swift */,
-				A48DD477273ECE0200104C4E /* NanoleafAPIClientTests.swift */,
+				A48DD477273ECE0200104C4E /* NanoleafClientTests.swift */,
 				A427E4B32819C97D006EEADC /* PanelTests.swift */,
+				A4EE8C732752610700BE7F55 /* SequenceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1176,7 +1176,7 @@
 				A48DD50C2742CFF900104C4E /* FetchDeviceRequest+Mock.swift in Sources */,
 				A4EE8C2F274BAC9700BE7F55 /* FetchGlobalOrientationRequestTests.swift in Sources */,
 				A427E4AC2819B9D2006EEADC /* MockHTTPSession.swift in Sources */,
-				A48DD4B3273EE26600104C4E /* NanoleafAPIClientTests.swift in Sources */,
+				A48DD4B3273EE26600104C4E /* NanoleafClientTests.swift in Sources */,
 				A4EE8C14274B9FFE00BE7F55 /* FetchSelectedEffectRequestTests.swift in Sources */,
 				A48DD4B5273EE4E600104C4E /* AuthenticateRequest+Mock.swift in Sources */,
 				A4DDF87B27493CA00042274B /* FetchHueRequest+Mock.swift in Sources */,
