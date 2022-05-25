@@ -3,39 +3,31 @@ import Network
 
 /// Browse Nanoleaf devices with Bonjour.
 public final class NanoleafDeviceBrowser {
-    /// An async sequence that emits devices found.
-    public var identifiers: AnyAsyncSequenceable<[DeviceIdentifier]>
-    
-    // Private
-    private let _stream: CurrentElementAsyncSequence<[DeviceIdentifier]> = .init([])
-    private var browser: NWBrowser?
-    
     // MARK: Initialization
     
     /// Initialize a new `NanoleafDeviceBrowser` instance.
-    public init() {
-        self.identifiers = self._stream.shared().eraseToAnyAsyncSequenceable()
-    }
+    public init() {}
     
-    // MARK: API
+    // MARK: Devices
     
-    /// Start monitoring for Nanoleaf devices.
-    public func start() {
-        self.cancel()
-        
-        let browser = self.buildBrowser()
-        browser.start(queue: .main)
-        self.browser = browser
-    }
-    
-    /// Stop monitoring for Nanoleaf devices.
-    public func cancel() {
-        self.browser?.cancel()
+    /// An async sequence that emits devices found.
+    public var identifiers: AnyAsyncSequenceable<[DeviceIdentifier]> {
+        AsyncStream { continuation in
+            let browser = self.buildBrowser { devices in
+                continuation.yield(devices)
+            }
+            browser.start(queue: .main)
+            
+            continuation.onTermination = { @Sendable _ in
+                browser.cancel()
+            }
+        }
+        .eraseToAnyAsyncSequenceable()
     }
     
     // MARK: Browser
     
-    private func buildBrowser() -> NWBrowser {
+    private func buildBrowser(resultsChanged: @escaping (_ devices: [DeviceIdentifier]) -> Void) -> NWBrowser {
         let parameters = NWParameters()
         parameters.includePeerToPeer = true
         let browser = NWBrowser(
@@ -43,7 +35,7 @@ public final class NanoleafDeviceBrowser {
             using: parameters
         )
         
-        browser.browseResultsChangedHandler = { [_stream] results, _ in
+        browser.browseResultsChangedHandler = { results, _ in
             let devices: [DeviceIdentifier] = results.compactMap { result in
                 switch result.endpoint {
                 case .url, .unix, .hostPort:
@@ -59,9 +51,7 @@ public final class NanoleafDeviceBrowser {
                 }
             }
             
-            Task {
-                await _stream.yield(devices)
-            }
+            resultsChanged(devices)
         }
         
         return browser
