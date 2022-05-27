@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/reddavis/Asynchrone",
       "state" : {
-        "revision" : "57e93c5352dd2d187e6eb27b9fbde5a74474d303",
-        "version" : "0.16.1"
+        "revision" : "27d0f57fa2e4da15bd2811dfab509d68422ea594",
+        "version" : "0.17.0"
       }
     }
   ],

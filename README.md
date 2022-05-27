@@ -31,8 +31,6 @@ Firstly use `NanoleafDeviceBrowser` to discover local devices with Bonjour. The 
 
 ```swift
 let browser = NanoleafDeviceBrowser()
-browser.start()
-
 for await identifiers in browser.identifiers {
     // ...
 }
