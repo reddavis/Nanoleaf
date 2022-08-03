@@ -3,10 +3,10 @@
     {
       "identity" : "asynchrone",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/reddavis/Asynchrone",
+      "location" : "https://github.com/reddavis/Asynchrone.git",
       "state" : {
-        "revision" : "27d0f57fa2e4da15bd2811dfab509d68422ea594",
-        "version" : "0.17.0"
+        "revision" : "657bfed52f2cad2e4697f1e3548796f563b20308",
+        "version" : "0.20.0"
       }
     }
   ],

@@ -1,8 +1,8 @@
 import Foundation
 
-public enum RyhthmMode: Int {
+public enum RhythmMode: Int {
     case microphone = 0
     case aux = 1
 }
 
-extension RyhthmMode: Codable {}
+extension RhythmMode: Codable {}
