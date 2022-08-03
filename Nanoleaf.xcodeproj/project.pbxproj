@@ -49,9 +49,9 @@
 		A48DD4F127427C7000104C4E /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F027427C7000104C4E /* Layout.swift */; };
 		A48DD4F327427CBD00104C4E /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F227427CBD00104C4E /* ShapeType.swift */; };
 		A48DD4F52742823C00104C4E /* EffectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F42742823C00104C4E /* EffectList.swift */; };
-		A48DD4F82742A84700104C4E /* Ryhthm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F72742A84700104C4E /* Ryhthm.swift */; };
-		A48DD4FA2742A87B00104C4E /* RyhthmPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */; };
-		A48DD4FC2742A8A200104C4E /* RyhthmMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */; };
+		A48DD4F82742A84700104C4E /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F72742A84700104C4E /* Rhythm.swift */; };
+		A48DD4FA2742A87B00104C4E /* RhythmPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4F92742A87B00104C4E /* RhythmPosition.swift */; };
+		A48DD4FC2742A8A200104C4E /* RhythmMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4FB2742A8A200104C4E /* RhythmMode.swift */; };
 		A48DD4FF2742C3BF00104C4E /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD4FE2742C3BF00104C4E /* Details.swift */; };
 		A48DD5012742C3E600104C4E /* PanelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD5002742C3E600104C4E /* PanelPosition.swift */; };
 		A48DD5062742CC1100104C4E /* FetchDeviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48DD5052742CC1100104C4E /* FetchDeviceRequest.swift */; };
@@ -189,9 +189,9 @@
 		A48DD4F027427C7000104C4E /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		A48DD4F227427CBD00104C4E /* ShapeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
 		A48DD4F42742823C00104C4E /* EffectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectList.swift; sourceTree = "<group>"; };
-		A48DD4F72742A84700104C4E /* Ryhthm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ryhthm.swift; sourceTree = "<group>"; };
-		A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyhthmPosition.swift; sourceTree = "<group>"; };
-		A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyhthmMode.swift; sourceTree = "<group>"; };
+		A48DD4F72742A84700104C4E /* Rhythm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
+		A48DD4F92742A87B00104C4E /* RhythmPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmPosition.swift; sourceTree = "<group>"; };
+		A48DD4FB2742A8A200104C4E /* RhythmMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmMode.swift; sourceTree = "<group>"; };
 		A48DD4FE2742C3BF00104C4E /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		A48DD5002742C3E600104C4E /* PanelPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelPosition.swift; sourceTree = "<group>"; };
 		A48DD5052742CC1100104C4E /* FetchDeviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDeviceRequest.swift; sourceTree = "<group>"; };
@@ -547,9 +547,9 @@
 		A48DD4F62742A83200104C4E /* Ryhthm */ = {
 			isa = PBXGroup;
 			children = (
-				A48DD4F72742A84700104C4E /* Ryhthm.swift */,
-				A48DD4FB2742A8A200104C4E /* RyhthmMode.swift */,
-				A48DD4F92742A87B00104C4E /* RyhthmPosition.swift */,
+				A48DD4F72742A84700104C4E /* Rhythm.swift */,
+				A48DD4FB2742A8A200104C4E /* RhythmMode.swift */,
+				A48DD4F92742A87B00104C4E /* RhythmPosition.swift */,
 			);
 			path = Ryhthm;
 			sourceTree = "<group>";
@@ -1098,7 +1098,7 @@
 				A4EE8C4E274C040700BE7F55 /* PluginConfiguration.swift in Sources */,
 				A4EE8CB32755247E00BE7F55 /* DeviceAddressResolver.swift in Sources */,
 				A4EE8C6B275013F700BE7F55 /* Color.swift in Sources */,
-				A48DD4F82742A84700104C4E /* Ryhthm.swift in Sources */,
+				A48DD4F82742A84700104C4E /* Rhythm.swift in Sources */,
 				A4DDF862274933300042274B /* FetchOnOffStateRequest.swift in Sources */,
 				A4EE8C772752623600BE7F55 /* AnimationData.swift in Sources */,
 				A4DDF87727493C260042274B /* FetchHueRequest.swift in Sources */,
@@ -1127,7 +1127,7 @@
 				A4DDF88127493DE00042274B /* FetchSaturationRequest.swift in Sources */,
 				A48DD443273ECA3100104C4E /* URLSession+HTTPSession.swift in Sources */,
 				A4EE8C36274BAE0700BE7F55 /* UpdatePanelLayoutRequest.swift in Sources */,
-				A48DD4FA2742A87B00104C4E /* RyhthmPosition.swift in Sources */,
+				A48DD4FA2742A87B00104C4E /* RhythmPosition.swift in Sources */,
 				A4EE8C2B274BAA2700BE7F55 /* FetchGlobalOrientationRequest.swift in Sources */,
 				A48DD4BF27400B3600104C4E /* DeviceIdentifier.swift in Sources */,
 				A4EE8C72275260E100BE7F55 /* Sequence+Extension.swift in Sources */,
@@ -1139,7 +1139,7 @@
 				A48DD4E927425B3400104C4E /* ColorMode.swift in Sources */,
 				A4EE8C20274BA76600BE7F55 /* FetchEffectsRequest.swift in Sources */,
 				A48DD4E62740249800104C4E /* Device.swift in Sources */,
-				A48DD4FC2742A8A200104C4E /* RyhthmMode.swift in Sources */,
+				A48DD4FC2742A8A200104C4E /* RhythmMode.swift in Sources */,
 				A4FDBE5327480FA200012206 /* UpdateStateRequest.swift in Sources */,
 				A4EE8C4B274BF6A000BE7F55 /* Plugin.swift in Sources */,
 				A4EE8CB52755445600BE7F55 /* DeviceAddress.swift in Sources */,

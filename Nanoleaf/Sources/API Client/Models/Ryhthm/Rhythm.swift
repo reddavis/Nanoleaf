@@ -1,21 +1,21 @@
 import Foundation
 
-public struct Ryhthm {
+public struct Rhythm {
     public var id: Int
     public var isConnected: Bool
     public var isActive: Bool
     public var hardwareVersion: String
     public var firmwareVersion: String
     public var isAuxAvailable: Bool
-    public var mode: RyhthmMode
-    public var position: RyhthmPosition
+    public var mode: RhythmMode
+    public var position: RhythmPosition
 }
 
-extension Ryhthm: Codable {}
+extension Rhythm: Codable {}
 
 // MARK: Coding keys
 
-extension Ryhthm {
+extension Rhythm {
     enum CodingKeys: String, CodingKey {
         case id = "rhythmId"
         case isConnected = "rhythmConnected"
@@ -30,9 +30,9 @@ extension Ryhthm {
 
 // MARK: Fixture
 
-extension Ryhthm: Fixture {
+extension Rhythm: Fixture {
     public static func fixture(_ configure: ((inout Self) -> Void)? = nil) -> Self {
-        var fixture = Ryhthm(
+        var fixture = Rhythm(
             id: 1,
             isConnected: true,
             isActive: true,

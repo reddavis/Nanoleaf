@@ -1,16 +1,16 @@
 import Foundation
 
-public struct RyhthmPosition {
+public struct RhythmPosition {
     public var x: Int
     public var y: Int
     public var orientation: Int
 }
 
-extension RyhthmPosition: Codable {}
+extension RhythmPosition: Codable {}
 
 // MARK: Coding keys
 
-extension RyhthmPosition {
+extension RhythmPosition {
     enum CodingKeys: String, CodingKey {
         case x
         case y
@@ -20,9 +20,9 @@ extension RyhthmPosition {
 
 // MARK: Fixture
 
-extension RyhthmPosition: Fixture {
+extension RhythmPosition: Fixture {
     public static func fixture(_ configure: ((inout Self) -> Void)? = nil) -> Self {
-        var fixture = RyhthmPosition(
+        var fixture = RhythmPosition(
             x: 0,
             y: 0,
             orientation: 0
